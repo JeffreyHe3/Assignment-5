@@ -1,10 +1,13 @@
+import { useNavigate } from "react-router-dom"
+
 function Header() {
+    const navigate = useNavigate();
 
     return (
         <div>
-            <h id="title">Jeffrey's Movies</h>
-            <button>Log In</button>
-            <button>Create Account</button>
+            <h1 id="title">Jeffrey's Movies</h1>
+            <button onClick={() => navigate('/login')}>Login</button>
+            <button onClick={() => navigate('/register')}>Register</button>
         </div>
     )
 }
