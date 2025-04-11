@@ -1,12 +1,12 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomeView from './views/HomeView';
-import LoginView from './views/LoginView';
-import RegisterView from './views/RegisterView';
-import ErrorView from './views/ErrorView';
-import DetailView from './views/DetailView';
-import MovieView from './views/MovieView';
-import GenreView from './views/GenreView';
+import HomeView from './Views/HomeView';
+import LoginView from './Views/LoginView';
+import RegisterView from './Views/RegisterView';
+import ErrorView from './Views/ErrorView';
+import DetailView from './Views/DetailView';
+import MoviesView from './Views/MoviesView';
+import GenreView from './Views/GenreView';
 
 function App() {
 
@@ -17,9 +17,9 @@ function App() {
         <Route path="/login" element={<LoginView />} />
         <Route path="/register" element={<RegisterView />} />
         <Route path="*" element={<ErrorView />} />
-        <Route path="/movie" element={<MovieView />}>
+        <Route path="/movies" element={<MoviesView />}>
             <Route path="genre" element={<GenreView />}></Route>
-            
+            <Route path="detail" element={<DetailView />}></Route>
           </Route>
       </Routes>
     </BrowserRouter>

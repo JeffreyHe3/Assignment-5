@@ -1,6 +1,10 @@
+import "./DetailView.css";
+
 function DetailView() {
     return (
-        <></>
+        <div>
+
+        </div>
     )
 }
 
