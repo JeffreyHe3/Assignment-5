@@ -14,10 +14,10 @@ function LoginView() {
         <div>
             <Header />
             <form onSubmit={handleSubmit}>
-                <label className="inputLabel">Email</label>
-                <input type="email" className="input" name="email" required />
-                <label className="inputLabel">Password</label>
-                <input type="password" className="input" name="password" required />
+                <label htmlFor="email" className="inputLabel">Email</label>
+                <input id="email" type="email" className="input" name="email" autoComplete="on" required />
+                <label htmlFor="password" className="inputLabel">Password</label>
+                <input id="password" type="password" className="input" name="password" required />
                 <input type="submit" value="Login" />
             </form>
             <Footer />
