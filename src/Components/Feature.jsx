@@ -7,7 +7,7 @@ function Feature() {
 
     useEffect(() => {
         async function getData() {
-            setMovie((await axios.get(`https://api.themoviedb.org/3/movie/now_playing?api_key=${import.meta.env.VITE_TMDB_KEY}`)).data.results.sort(() => 0.5 - Math.random()).slice(0, 4));
+            setMovie((await axios.get(`https://api.themoviedb.org/3/movie/now_playing?include_adult=false&api_key=${import.meta.env.VITE_TMDB_KEY}`)).data.results.sort(() => 0.5 - Math.random()).slice(0, 4));
         }
 
         getData();

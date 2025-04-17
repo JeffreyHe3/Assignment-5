@@ -10,9 +10,11 @@ function LoginView() {
         e.preventDefault();
         navigate('/movies/now_playing');
     };
+    
     return (
-        <div>
+        <div id="container">
             <Header />
+            <h1>Login</h1>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="email" className="inputLabel">Email</label>
                 <input id="email" type="email" className="input" name="email" autoComplete="on" required />
