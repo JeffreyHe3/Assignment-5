@@ -17,13 +17,13 @@ function App() {
         <Route path="/login" element={<LoginView />} />
         <Route path="/register" element={<RegisterView />} />
         <Route path="/movies" element={<MoviesView />}>
-            <Route path="genre" element={<GenreView />}></Route>
-            <Route path="detail" element={<DetailView />}></Route>
-            <Route path=":id" element={<DetailView />}></Route>
-            <Route path=":genre_id" element={<GenreView />}></Route>
-          </Route>
+          <Route path="genre" element={<GenreView />}></Route>
+          <Route path="detail" element={<DetailView />}></Route>
+          <Route path=":id" element={<DetailView />}></Route>
+          <Route path=":genre_id" element={<GenreView />}></Route>
+        </Route>
+        <Route path="*" element={<ErrorView />} />
       </Routes>
-      <Route path="*" element={<ErrorView />} />
     </BrowserRouter>
   )
 }

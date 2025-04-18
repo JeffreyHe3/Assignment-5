@@ -10,18 +10,20 @@ function LoginView() {
         e.preventDefault();
         navigate('/movies/now_playing');
     };
-    
+
     return (
-        <div id="container">
+        <div>
             <Header />
-            <h1>Login</h1>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="email" className="inputLabel">Email</label>
-                <input id="email" type="email" className="input" name="email" autoComplete="on" required />
-                <label htmlFor="password" className="inputLabel">Password</label>
-                <input id="password" type="password" className="input" name="password" required />
-                <input type="submit" value="Login" />
-            </form>
+            <div id="lForm">
+                <h1>Login</h1>
+                <form onSubmit={handleSubmit}>
+                    <label htmlFor="email" className="inputLabel">Email</label>
+                    <input id="email" type="email" className="input" name="email" autoComplete="on" required />
+                    <label htmlFor="password" className="inputLabel">Password</label>
+                    <input id="password" type="password" className="input" name="password" required />
+                    <input type="submit" value="Login" />
+                </form>
+            </div>
             <Footer />
         </div>
     )

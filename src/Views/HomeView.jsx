@@ -6,7 +6,7 @@ import Feature from "../components/Feature";
 
 function HomeView() {
     return (
-        <div>
+        <div id="home">
             <Header />
             <Hero />
             <Feature />
