@@ -6,11 +6,12 @@ import { Outlet } from "react-router-dom";
 
 function MovieView() {
     return (
+        
         <div>
-            <Header />
+            {/* <Header />
             <Genres />
             <Outlet />
-            <Footer />
+            <Footer /> */}
         </div>
     )
 }
