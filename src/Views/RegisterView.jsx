@@ -13,7 +13,7 @@ function RegisterView() {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (p1 == p2) {
-            navigate('/movies/now_playing');
+            navigate('/movies');
         } else {
             const handleClick = () => {
                 setShowError(true);

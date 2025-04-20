@@ -1,14 +1,11 @@
-import { useNavigate } from "react-router-dom"
 import './style.css'
 
-function Genres() {
-    const [genres, setGenres] = useState([]);
+function Genres(props) {
 
+    
     return (
         <div>
-            {genres && genres.map(genres => (
-                <button onClick={() => navigate('/'+genres.id)}>genres.genre</button>
-            ))}
+
         </div>
     )
 }
