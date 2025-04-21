@@ -26,7 +26,7 @@ function RegisterView() {
         <div>
             <Header />
             <div id="rForm" >
-                <h1>Register</h1>
+                <h1 id="rTitle">Register</h1>
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="firstName" className="inputLabel">First Name</label>
                     <input id="firstName" type="text" className="input" name="firstName" required />
@@ -42,7 +42,7 @@ function RegisterView() {
                 </form>
             </div>
             {showError && (
-                    <h2>Passwords do not match</h2>
+                <h2 id="errorM">Passwords do not match</h2>
             )}
             <Footer />
         </div>

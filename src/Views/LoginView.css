@@ -9,7 +9,7 @@
     height: 10%;
 }
 
-h1 {
+#lTitle {
     color: #555;
     font-size: 24px;
     margin-bottom: 20px;
@@ -50,3 +50,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #3d057e;
 }
+
+body {
+    scrollbar-gutter: stable both-edges;
+  }

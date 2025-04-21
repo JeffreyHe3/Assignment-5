@@ -46,11 +46,11 @@ function MovieView() {
 
     return (
 
-        <div>
-            <Header />
-            <Genres list={genreList} />
-            <Outlet />
-            <Footer />
+        <div id="container">
+            <Header id="header" />
+            <Genres genre={genreList} id="genres"/>
+            <Outlet id="outlet"/>
+            <Footer id="footer"/>
         </div>
     )
 }

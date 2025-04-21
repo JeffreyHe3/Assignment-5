@@ -15,7 +15,7 @@ function LoginView() {
         <div>
             <Header />
             <div id="lForm">
-                <h1>Login</h1>
+                <h1 id="lTitle">Login</h1>
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="email" className="inputLabel">Email</label>
                     <input id="email" type="email" className="input" name="email" autoComplete="on" required />

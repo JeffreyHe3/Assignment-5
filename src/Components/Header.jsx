@@ -7,8 +7,8 @@ function Header() {
     return (
         <div id="header">
             <h1 id="title">Jeffrey's Movies</h1>
-            <button onClick={() => navigate('/login')}>Login</button>
-            <button onClick={() => navigate('/register')}>Register</button>
+            <button className="headerButtons" onClick={() => navigate('/login')}>Login</button>
+            <button className="headerButtons" onClick={() => navigate('/register')}>Register</button>
         </div>
     )
 }
