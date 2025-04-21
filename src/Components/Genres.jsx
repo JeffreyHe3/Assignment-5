@@ -1,18 +1,17 @@
-import { useNavigate } from "react-router-dom"
+import { NavLink } from "react-router-dom";
 import './style.css'
 
 function Genres(props) {
-    const navigate = useNavigate();
     return (
-        <div>
+        <div className="movies-container">
             <h1 id="gTitle">Genres</h1>
             {props.genre && props.genre.map(genreList => (
-                <div key={genreList.id}>
-                    <button onClick={() => navigate(`genres/${genreList.id}`)} className="genreButtons" >{genreList.genre}</button>
+                <div key={genreList.id} className="movies-nav">
+                    <NavLink to={`genres/${genreList.id}`} className="genreButtons">{genreList.genre}</NavLink>
                 </div>
             ))}
         </div>
     )
-}   
+}
 
 export default Genres
