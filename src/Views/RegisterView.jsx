@@ -37,7 +37,7 @@ function RegisterView() {
                     <label htmlFor="1Password" className="inputLabel">Password</label>
                     <input id="1Password" type="password" className="input" name="1Password" onChange={event => { setP1(String(event.target.value)) }} required />
                     <label htmlFor="2Password" className="inputLabel">Re-enter Password</label>
-                    <input id="2Password" type="password" className="input" name="2Password" onChange={event => { setP2(NuStringmber(event.target.value)) }} required />
+                    <input id="2Password" type="password" className="input" name="2Password" onChange={event => { setP2(String(event.target.value)) }} required />
                     <input type="submit" value="Register" />
                 </form>
             </div>
