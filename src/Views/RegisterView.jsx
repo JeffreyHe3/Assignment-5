@@ -15,10 +15,7 @@ function RegisterView() {
         if (p1 == p2) {
             navigate('/movies/genres/28');
         } else {
-            const handleClick = () => {
-                setShowError(true);
-            };
-            handleClick();
+            setShowError(true);
         }
     };
 
