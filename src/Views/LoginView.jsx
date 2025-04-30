@@ -8,7 +8,7 @@ function LoginView() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        navigate('/movies');
+        navigate('/movies/genres/28');
     };
 
     return (
