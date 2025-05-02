@@ -16,16 +16,13 @@
     font-family: 'Arial';
 }
 
-label {
+.inputLabel {
     margin-bottom: 8px;
     font-size: 14px;
     color: #555;
 }
 
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+.input {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -34,7 +31,7 @@ input[type="password"] {
     width: 100%;
 }
 
-input[type="submit"] {
+#loginButton {
     background-color: #7009e5;
     border: none;
     color: white;
@@ -53,4 +50,4 @@ input[type="submit"]:hover {
 
 body {
     scrollbar-gutter: stable both-edges;
-  }
+}

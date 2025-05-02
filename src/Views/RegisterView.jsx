@@ -35,12 +35,10 @@ function RegisterView() {
                     <input id="1Password" type="password" className="input" name="1Password" onChange={event => { setP1(String(event.target.value)) }} required />
                     <label htmlFor="2Password" className="inputLabel">Re-enter Password</label>
                     <input id="2Password" type="password" className="input" name="2Password" onChange={event => { setP2(String(event.target.value)) }} required />
-                    <input type="submit" value="Register" />
+                    <input type="submit" id="registerButton" value="Register" />
                 </form>
             </div>
-            {showError && (
-                <h2 id="errorM">Passwords do not match</h2>
-            )}
+            {showError && <h2 id="errorM">Passwords do not match</h2>}
             <Footer />
         </div>
     )
