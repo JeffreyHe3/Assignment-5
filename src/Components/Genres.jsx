@@ -3,10 +3,10 @@ import './style.css'
 
 function Genres(props) {
     return (
-        <div className="movies-container">
+        <div className="moviesContainer">
             <h1 id="gTitle">Genres</h1>
             {props.genre && props.genre.map(genreList => (
-                <div key={genreList.id} className="movies-nav">
+                <div key={genreList.id} className="moviesNav">
                     <NavLink to={`genres/${genreList.id}`} className="genreButtons">{genreList.genre}</NavLink>
                 </div>
             ))}
