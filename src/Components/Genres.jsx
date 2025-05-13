@@ -3,7 +3,7 @@ import './style.css'
 
 function Genres(props) {
     return (
-        <div className="moviesContainer">
+        <div>
             <h1 id="gTitle">Genres</h1>
             {props.genre && props.genre.map(genreList => (
                 <div key={genreList.id} className="moviesNav">
